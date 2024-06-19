@@ -28,7 +28,7 @@ class _ComputerPageState extends State<ComputerPage> {
                   height: 50,
                   child: GestureDetector(
                     onTap: () =>
-                        Navigator.pushReplacementNamed(context, '/room1'),
+                        Navigator.pushReplacementNamed(context, '/present'),
                   ),
                 ),
                 ElevatedButton(
@@ -45,7 +45,7 @@ class _ComputerPageState extends State<ComputerPage> {
       floatingActionButton: FloatingActionButton.small(
         backgroundColor: const Color.fromRGBO(255, 0, 0, 1.0),
         tooltip: 'Voltar',
-        onPressed: () => Navigator.pushReplacementNamed(context, '/room1'),
+        onPressed: () => Navigator.pushReplacementNamed(context, '/present'),
         child: const Icon(Icons.arrow_back, color: Colors.white, size: 15),
       ),
     );

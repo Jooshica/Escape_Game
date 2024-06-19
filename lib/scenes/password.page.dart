@@ -11,7 +11,7 @@ class PasswordPage extends StatelessWidget {
     if (_txtPassword.text == password) {
       Navigator.pushReplacementNamed(context, '/webpage');
     } else {
-      Navigator.pushReplacementNamed(context, '/room1');
+      Navigator.pushReplacementNamed(context, '/present');
     }
   }
 
@@ -43,7 +43,7 @@ class PasswordPage extends StatelessWidget {
                   ElevatedButton(
                     child: const Text('Voltar'),
                     onPressed: () =>
-                        Navigator.pushReplacementNamed(context, '/room1'),
+                        Navigator.pushReplacementNamed(context, '/present'),
                   ),
                 ],
               ),

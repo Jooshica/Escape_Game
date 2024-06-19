@@ -26,7 +26,7 @@ class _AbajurPageState extends State<AbajurPage> {
                 ElevatedButton(
                     child: const Text("Voltar"),
                     onPressed: () =>
-                        Navigator.pushReplacementNamed(context, '/room1')),
+                        Navigator.pushReplacementNamed(context, '/present')),
                 SizedBox(height: 20),
               ],
             ),

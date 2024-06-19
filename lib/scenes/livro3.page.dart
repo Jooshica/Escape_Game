@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextPage extends StatelessWidget {
-  const TextPage({Key, key}) : super(key: key);
+class BookPage2 extends StatelessWidget {
+  const BookPage2 ({Key, key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class TextPage extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/papel.png'),
+            image: AssetImage('assets/images/papel.png'),
             fit: BoxFit.fill,
           ),
         ),
@@ -22,7 +22,12 @@ class TextPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Bem-vindo à página de texto!',
+                  'Outros dois pacientes demonstraram resultados '
+                  'que vão muito além do esperado. É quase milagroso '
+                  'o que estamos fazendo aqui dentro, me atrevo a '
+                  'dizer que podemos estar levando a humanidade para '
+                  'outro nível. Podem questionar quais são os meus '
+                  'meios, mas não os meus resultados.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
@@ -34,7 +39,7 @@ class TextPage extends StatelessWidget {
               SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context, '/room1');
+                  Navigator.pushReplacementNamed(context, '/past');
                 },
                 child: Text('Voltar'),
               ),

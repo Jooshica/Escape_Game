@@ -14,7 +14,6 @@ class ConfigPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          height: 240,
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
